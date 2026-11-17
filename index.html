@@ -70,8 +70,34 @@
   .cta .btn:hover{background:#f3ecff;transform:translateY(-2px)}
   footer{padding:60px 0 40px;text-align:center;color:var(--gray);font-size:.88rem}
   footer a{color:var(--violet);text-decoration:none;font-weight:600}
+  /* Nuevas secciones */
+  .support-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+  .support-card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid #ede9f6;transition:.3s}
+  .support-card:hover{box-shadow:0 20px 40px -15px rgba(109,40,217,.2);transform:translateY(-4px)}
+  .support-img{height:160px;background-size:cover;background-position:center}
+  .support-content{padding:28px}
+  .support-content h3{font-size:1.2rem;margin-bottom:10px;color:var(--violet-dark)}
+  .support-content p{font-size:.88rem;color:var(--gray);margin-bottom:20px}
+  .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+  .blog-card{background:#fff;border-radius:16px;overflow:hidden;border:1px solid #ede9f6;transition:.3s}
+  .blog-card:hover{transform:translateY(-4px);box-shadow:0 15px 30px -10px rgba(109,40,217,.2)}
+  .blog-img{height:140px;background-size:cover;background-position:center}
+  .blog-body{padding:20px}
+  .blog-cat{font-size:.7rem;color:var(--coral);font-weight:700;text-transform:uppercase}
+  .blog-body h3{font-size:1rem;margin:8px 0}
+  .blog-body p{font-size:.82rem;color:var(--gray)}
+  .blog-meta{font-size:.72rem;color:#aaa;margin-top:10px}
+  /* WhatsApp Flotante */
+  .wa-float{position:fixed;bottom:24px;right:24px;z-index:1000}
+  .wa-btn{width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.2);cursor:pointer;transition:.3s;border:none}
+  .wa-btn:hover{transform:scale(1.08)}
+  .wa-menu{position:absolute;bottom:70px;right:0;background:#fff;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15);padding:8px;display:none;flex-direction:column;gap:4px;min-width:180px;border:1px solid #ede9f6}
+  .wa-menu.open{display:flex}
+  .wa-item{display:flex;align-items:center;gap:12px;padding:10px 14px;text-decoration:none;color:var(--ink);font-size:.9rem;border-radius:8px;transition:.2s}
+  .wa-item:hover{background:#f9f5ff}
+  .wa-flag{font-size:1.3rem}
   @media(max-width:900px){
-    .hero-grid,.grid-roles,.why-grid{grid-template-columns:1fr}
+    .hero-grid,.grid-roles,.why-grid,.support-grid,.blog-grid{grid-template-columns:1fr}
     .hero h1{font-size:2.2rem}
     nav ul{display:none}
     .cta{margin:0 16px;padding:60px 24px}
@@ -85,10 +111,10 @@
     <div class="logo"><span class="logo-dot"></span>tuempleadoia<span style="color:var(--coral)">.shop</span></div>
     <ul>
       <li><a href="#roles">Empleados IA</a></li>
-      <li><a href="#porque">Por qué</a></li>
-      <li><a href="#empezar">Empezar</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#apoyo">Empezar</a></li>
     </ul>
-    <a href="#empezar" class="btn btn-coral">Quiero mi equipo</a>
+    <a href="#apoyo" class="btn btn-coral">Quiero mi equipo</a>
   </nav>
 </header>
 
@@ -99,7 +125,7 @@
       <h1>Tu startup merece un equipo que <span class="highlight">rinda como uno grande</span>.</h1>
       <p>Contrata empleados de inteligencia artificial por una fracción del costo de un sueldo. Project manager, contador, marketing, logística y más. Listos en minutos.</p>
       <a href="#roles" class="btn">Ver empleados disponibles</a>
-      <a href="#empezar" class="btn btn-coral" style="margin-left:10px">Hablar por WhatsApp</a>
+      <a href="#apoyo" class="btn btn-coral" style="margin-left:10px">Hablar por WhatsApp</a>
     </div>
     <div class="hero-visual">
       <div class="phone-mock">
@@ -165,16 +191,69 @@
   </div>
 </section>
 
-<section class="why" id="porque">
+<!-- NUEVA SECCIÓN: CONTACTO Y SOPORTE -->
+<section id="apoyo" style="background:#f9f5ff;">
   <div class="container">
     <div class="section-head">
-      <h2>¿Por qué elegir IA y no contratar?</h2>
-      <p>La diferencia que necesitas para escalar sin quebrar tu flujo de caja.</p>
+      <h2>¿En qué podemos ayudarte?</h2>
+      <p>Elige el camino que necesites. Nuestro equipo está listo para darte una mano.</p>
     </div>
-    <div class="why-grid">
-      <div class="why-item"><span class="why-num">10x</span><h4>Más barato</h4><p>Fracción del costo de un sueldo más beneficios sociales.</p></div>
-      <div class="why-item"><span class="why-num">24/7</span><h4>Siempre activo</h4><p>No duerme, no se enferma, no se va de vacaciones.</p></div>
-      <div class="why-item"><span class="why-num">0</span><h4>Cero planilla</h4><p>Sin contratos, sin CTS, sin liquidaciones. Solo resultados.</p></div>
+    <div class="support-grid">
+      <div class="support-card">
+        <div class="support-img" style="background-image:url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="support-content">
+          <h3>Descubre tu Equipo Ideal</h3>
+          <p>¿No sabes por dónde empezar? Cuéntanos tu idea y te armamos un combo de empleados IA a medida para tu emprendimiento.</p>
+          <a href="https://wa.me/525551000359?text=Hola,%20vengo%20de%20tuempleadoia.shop%20y%20quiero%20asesor%C3%ADa%20(M%C3%A9xico)" class="btn">Hablar con un Asesor</a>
+        </div>
+      </div>
+      <div class="support-card">
+        <div class="support-img" style="background-image:url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="support-content">
+          <h3>Ayuda con tu Negocio</h3>
+          <p>¿Ya tienes un equipo contratado? Resolvemos tus dudas técnicas y te ayudamos a sacarle el máximo provecho.</p>
+          <a href="https://wa.me/51941463997?text=Hola,%20vengo%20de%20tuempleadoia.shop%20y%20necesito%20soporte%20(Per%C3%BA)" class="btn btn-coral">Contactar Soporte</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUEVA SECCIÓN: BLOG -->
+<section id="blog">
+  <div class="container">
+    <div class="section-head">
+      <h2>Ideas para crecer</h2>
+      <p>Artículos rápidos y prácticos para emprendedores que quieren escalar con IA.</p>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Gestión</span>
+          <h3>Tu PM IA: el socio que nunca duerme</h3>
+          <p>Olvídate de los retrasos. Tu Project Manager digital te avisa antes de que todo se complique.</p>
+          <div class="blog-meta">15 Nov 2026</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Finanzas</span>
+          <h3>Planillas sin estrés con IA</h3>
+          <p>Deja que un agente digital se encargue de los cálculos, CTS y beneficios. Cero errores, cero multas.</p>
+          <div class="blog-meta">10 Nov 2026</div>
+        </div>
+      </div>
+      <div class="blog-card">
+        <div class="blog-img" style="background-image:url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop');"></div>
+        <div class="blog-body">
+          <span class="blog-cat">Ventas</span>
+          <h3>Vende 24/7 con tu Account Manager IA</h3>
+          <p>El agente que califica leads, responde dudas y agenda reuniones mientras tú duermes.</p>
+          <div class="blog-meta">05 Nov 2026</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -185,8 +264,8 @@
       <h2>Arma tu equipo de IA hoy</h2>
       <p>Cuéntanos qué necesita tu emprendimiento y te proponemos un combo de empleados IA en minutos.</p>
       <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
-        <a href="https://wa.me/525551000359?text=Hola,%20vengo%20de%20tuempleadoia.shop%20y%20quiero%20armar%20mi%20equipo%20(Contacto%20M%C3%A9xico)" class="btn">🇲🇽 Empezar México</a>
-        <a href="https://wa.me/51941463997?text=Hola,%20vengo%20de%20tuempleadoia.shop%20y%20quiero%20armar%20mi%20equipo%20(Contacto%20Per%C3%BA)" class="btn">🇵🇪 Empezar Perú</a>
+        <a href="https://wa.me/525551000359?text=Hola,%20vengo%20de%20tuempleadoia.shop%20(M%C3%A9xico)" class="btn">🇲🇽 Empezar México</a>
+        <a href="https://wa.me/51941463997?text=Hola,%20vengo%20de%20tuempleadoia.shop%20(Per%C3%BA)" class="btn">🇵🇪 Empezar Perú</a>
       </div>
     </div>
   </div>
@@ -204,5 +283,30 @@
     <p style="margin-top:16px;font-size:.8rem;opacity:.7">© 2026 TuEmpleadoIA. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<!-- WIDGET WHATSAPP FLOTANTE -->
+<div class="wa-float">
+  <div class="wa-menu" id="waMenu">
+    <a href="https://wa.me/525551000359?text=Hola,%20vengo%20de%20tuempleadoia.shop" class="wa-item" target="_blank">
+      <span class="wa-flag">🇲🇽</span> México
+    </a>
+    <a href="https://wa.me/51941463997?text=Hola,%20vengo%20de%20tuempleadoia.shop" class="wa-item" target="_blank">
+      <span class="wa-flag">🇵🇪</span> Perú
+    </a>
+  </div>
+  <button class="wa-btn" onclick="document.getElementById('waMenu').classList.toggle('open')" aria-label="Abrir opciones de WhatsApp">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Z"/></svg>
+  </button>
+</div>
+
+<script>
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('waMenu');
+    const btn = document.querySelector('.wa-btn');
+    if (!btn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+</script>
 </body>
 </html>
